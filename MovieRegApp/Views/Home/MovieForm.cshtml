@@ -1,0 +1,35 @@
+﻿@model Movie
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<h1>Enter a Movie</h1>
+
+<form method="post">
+<h2>Movie ID</h2>
+@Html.Editor("ID")
+
+<h2>Title</h2>
+@Html.Editor("Title")
+
+<h2>Genre</h2>
+
+<select name="Genre">
+    <option value="Genre">Horror</option>
+    <option value="Genre">Romance</option>
+    <option value="Genre">Comedy</option>
+    <option value="Genre">Fantasy</option>
+    <option value="Genre">Action</option>
+</select>
+
+<h2>Release Date</h2>
+@Html.Editor("ReleaseDate")
+
+<h2>Actors</h2>
+@Html.Editor("Actors")
+
+<h2>Directors</h2>
+@Html.Editor("Directors")
+
+<input type="submit"Submit/>
+    
+</form>
